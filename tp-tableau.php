@@ -46,8 +46,8 @@ echo $numbers[$rand_keys[15]] . "\n";
 
 <!-- Etape 4 -->
 <?php
-$rand_keys = array_slice($numbers, 0, 16);
-$rand_keys2 = array_slice($numbers, 0, 16);
+$rand_keys = array_slice($numbers, 16);
+$rand_keys2 = array_slice($numbers, 16);
 $tabMerge = array_merge($rand_keys, $rand_keys2);
 shuffle($tabMerge);
 $finalTab = array_chunk($tabMerge, 2);

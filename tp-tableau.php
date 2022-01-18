@@ -45,7 +45,6 @@ echo $numbers[$rand_keys[15]] . "\n";
 <br>
 
 <!-- Etape 4 -->
-<!-- Je n'y arrive decidement pas , je pensais avoir compris mais pas du tout -->
 <?php
 $rand_keys = array_slice($numbers, 0, 16);
 $rand_keys2 = array_slice($numbers, 0, 16);

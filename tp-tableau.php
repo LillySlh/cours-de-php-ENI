@@ -47,25 +47,10 @@ echo $numbers[$rand_keys[15]] . "\n";
 <!-- Etape 4 -->
 <!-- Je n'y arrive decidement pas , je pensais avoir compris mais pas du tout -->
 <?php
-$array1 = array($rand_keys);
-$array2 = array($rand_keys);
-$result = array_merge($array1, $array2);
-$rand_keys2 = array_rand($result, 16);
-echo $result[$rand_keys2[0]] . "\n";
-echo $result[$rand_keys2[1]] . "\n";
-echo $result[$rand_keys2[2]] . "\n";
-echo $result[$rand_keys2[3]] . "\n";
-echo $result[$rand_keys2[4]] . "\n";
-echo $result[$rand_keys2[5]] . "\n";
-echo $result[$rand_keys2[6]] . "\n";
-echo $result[$rand_keys2[7]] . "\n";
-echo $result[$rand_keys2[8]] . "\n";
-echo $result[$rand_keys2[9]] . "\n";
-echo $result[$rand_keys2[10]] . "\n";
-echo $result[$rand_keys2[11]] . "\n";
-echo $result[$rand_keys2[12]] . "\n";
-echo $result[$rand_keys2[13]] . "\n";
-echo $result[$rand_keys2[14]] . "\n";
-echo $result[$rand_keys2[15]] . "\n";
-
+$rand_keys = array_slice($numbers, 0, 16);
+$rand_keys2 = array_slice($numbers, 0, 16);
+$tabMerge = array_merge($rand_keys, $rand_keys2);
+shuffle($tabMerge);
+$finalTab = array_chunk($tabMerge, 2);
+var_dump($finalTab);
 ?>

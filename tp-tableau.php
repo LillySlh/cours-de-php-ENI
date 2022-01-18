@@ -53,3 +53,8 @@ shuffle($tabMerge);
 $finalTab = array_chunk($tabMerge, 2);
 var_dump($finalTab);
 ?>
+
+<!-- Etape 5 -->
+<?php
+shuffle($finalTab);
+?>
